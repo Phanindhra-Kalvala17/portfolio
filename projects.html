@@ -1,0 +1,349 @@
+<!-- DevOps Portfolio - Projects -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#9ecaff",
+              "outline": "#8e9099",
+              "on-primary-fixed-variant": "#00497d",
+              "surface-container": "#1e2022",
+              "outline-variant": "#44474e",
+              "on-background": "#e2e2e5",
+              "on-tertiary-container": "#00984c",
+              "error": "#ffb4ab",
+              "tertiary-fixed": "#62ff96",
+              "surface-container-low": "#1a1c1e",
+              "inverse-on-surface": "#2f3133",
+              "on-error-container": "#ffdad6",
+              "primary-container": "#001d36",
+              "surface": "#121416",
+              "on-secondary": "#17324b",
+              "primary": "#9ecaff",
+              "on-tertiary-fixed": "#00210b",
+              "on-tertiary": "#003918",
+              "surface-bright": "#37393b",
+              "secondary": "#afc9e8",
+              "tertiary-container": "#00210b",
+              "on-surface-variant": "#c4c6cf",
+              "background": "#121416",
+              "on-primary": "#003258",
+              "surface-container-highest": "#333537",
+              "secondary-container": "#2f4963",
+              "secondary-fixed-dim": "#afc9e8",
+              "error-container": "#93000a",
+              "tertiary": "#00e475",
+              "on-secondary-container": "#9eb7d6",
+              "surface-container-lowest": "#0c0e10",
+              "on-secondary-fixed": "#001d34",
+              "inverse-primary": "#0061a4",
+              "inverse-surface": "#e2e2e5",
+              "on-secondary-fixed-variant": "#2f4963",
+              "tertiary-fixed-dim": "#00e475",
+              "on-tertiary-fixed-variant": "#005226",
+              "on-primary-container": "#0088e1",
+              "surface-container-high": "#282a2c",
+              "surface-dim": "#121416",
+              "on-error": "#690005",
+              "primary-fixed-dim": "#9ecaff",
+              "surface-variant": "#333537",
+              "on-surface": "#e2e2e5",
+              "on-primary-fixed": "#001d36",
+              "primary-fixed": "#d1e4ff",
+              "secondary-fixed": "#d0e4ff"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"],
+              "mono": ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace']
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary/30 selection:text-tertiary">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface-variant/60 backdrop-blur-[20px] transition-all border-none">
+<nav class="w-full max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+<div class="text-xl font-bold tracking-tighter text-blue-300 dark:text-blue-200 font-headline">
+                DevOps Portfolio
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label font-medium" href="index.html">Blog</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label font-medium" href="resume.html">Resume</a>
+<a class="text-blue-300 border-b-2 border-emerald-400 pb-1 font-label font-medium" href="projects.html">Projects</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label font-medium" href="about.html">About</a>
+<a href="mailto:Kalvalaphanindhra02@gmail.com?subject=Opportunity:%20[Role%20Title]%20at%20[Company%20Name]&body=Hi%20Phanindhra,%0A%0AWe%20are%20interested%20in%20your%20profile.%20Please%20find%20the%20details%20below:%0A%0A%2D%2D%2D%0A%0ACompany%20Name:%20[Enter%20Company%20Name]%0A%0AJob%20Title:%20[Enter%20Job%20Title]%0A%0AJob%20Description:%0A[Paste%20job%20description%20or%20link%20here]%0A%0AApplication%20/%20Next%20Steps:%0A[Provide%20next%20steps%20here]%0A%0A%2D%2D%2D%0A%0ALooking%20forward%20to%20connecting!" class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold hover:bg-on-primary-container hover:shadow-[0_0_15px_#00e475] transition-all inline-block">
+    Hire Me
+</a>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-24 max-w-7xl mx-auto px-8">
+<!-- Hero Section / Header -->
+<section class="mb-24 md:pl-24 md:pr-12 relative">
+<h1 class="text-5xl md:text-7xl font-headline font-bold tracking-tighter bg-gradient-to-br from-primary to-on-primary-container bg-clip-text text-transparent mb-6 pb-2 leading-none">
+                Engineered <br/>
+<span class="italic text-on-surface">Infrastructures.</span>
+</h1>
+<p class="max-w-2xl text-[1rem] leading-[1.6] text-on-surface-variant font-body">
+                Exploring the intersection of scalable architecture and automated delivery. This collection represents production-grade solutions built with security and reliability as first-class citizens.
+            </p>
+</section>
+<!-- Projects Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- 1. Organic Fruits Marketplace -->
+<div class="md:col-span-12 group relative overflow-hidden rounded-2xl bg-surface-container-low border border-outline-variant/15 hover:border-primary/50 transition-colors">
+<div class="p-8 md:p-12 h-full flex flex-col justify-center">
+    <!-- Header -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+        <div>
+            <div class="mono text-primary text-xs tracking-widest uppercase mb-3 block">Scalable Cloud Architecture | AWS | Serverless | DevOps</div>
+            <h3 class="text-3xl md:text-5xl font-headline font-bold text-on-surface">🌿 Organic Fruits Marketplace</h3>
+        </div>
+        <a href="#" class="text-primary hover:text-white transition-colors"><span class="material-symbols-outlined text-3xl">north_east</span></a>
+    </div>
+    
+    <!-- Content Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Col 1 -->
+        <div class="space-y-8">
+            <div>
+                <h4 class="font-headline font-bold text-tertiary mb-3 text-lg">📌 Overview &amp; Problem</h4>
+                <p class="text-[1rem] leading-[1.6] text-on-surface-variant font-body mb-4">Designed a scalable, highly available, and cost-optimized cloud architecture for an e-commerce platform.</p>
+                <p class="text-[1rem] leading-[1.6] text-on-surface-variant font-body">Solves traditional scaling challenges (traffic spikes, high hosting costs) using a serverless, cloud-native approach.</p>
+            </div>
+            <div>
+                <h4 class="font-headline font-bold text-secondary mb-3 text-lg">🏗️ Architecture Design</h4>
+                <ul class="space-y-3 text-on-surface-variant leading-relaxed text-sm">
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span><strong class="text-on-surface">Frontend:</strong> Static S3 website + CloudFront CDN</li>
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span><strong class="text-on-surface">Backend:</strong> REST APIs via API Gateway + AWS Lambda</li>
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span><strong class="text-on-surface">Database:</strong> DynamoDB (NoSQL) + RDS</li>
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span><strong class="text-on-surface">Auth &amp; Monitoring:</strong> Cognito + CloudWatch</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="space-y-8">
+            <div>
+                <h4 class="font-headline font-bold text-primary mb-3 text-lg">⚙️ DevOps &amp; Features</h4>
+                <ul class="space-y-3 text-on-surface-variant leading-relaxed text-sm mb-4">
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span>GitHub Actions for CI/CD automation</li>
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span>Terraform / AWS CDK for IaC provisioning</li>
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span>Dynamic product listings &amp; secure processing</li>
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span>Separate Config-driven Dev/Prod environments</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-headline font-bold text-on-surface mb-3 text-lg">📊 Outcomes &amp; Future</h4>
+                <ul class="space-y-3 text-on-surface-variant leading-relaxed text-sm">
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span>Balanced performance, scalability, and cost (pay-as-you-go).</li>
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span>Planned improvements: Stripe integration, real-time tracking, and advanced Prometheus monitoring.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Col 3 -->
+        <div class="hidden lg:block relative rounded-xl overflow-hidden border border-outline-variant/15 aspect-auto bg-surface-container-highest">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuByzov-NJOYMzhgUrxVmTjx7yzeN8W3P1UtHfpgswbeM3Q5t8YQSO4C3NLiJQtsYt5YW9DVDWOdk7c2zBhF0zE3D9J5BAoXEMhFjfgXmLuWtoirhwe0r8n47vUfhhzCnzDDwPZfwFc_CpqchXSpBU7rT4sYtzIA7wVIL4tbPPJ0XVicyufQeGsoK27yQYrBa764QfOBuYNgO_WGCxI23UUqQ9sAh3geNEjwpxGn9y_JOU52M6_2NWrTVSeb-uiMOnHN6y0cPPyGOOB_" class="w-full h-full object-cover opacity-40 mix-blend-luminosity hover:opacity-100 hover:mix-blend-normal transition-all duration-700" alt="Serverless Arch"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent pointer-events-none"></div>
+            <div class="absolute bottom-6 left-6 right-6">
+                <div class="mono text-[10px] text-tertiary mb-2">ARCH.DIAGRAM</div>
+                <div class="text-on-surface font-headline font-bold text-xl">Cloud-Native E-Commerce</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 2. DevOps Engineering Projects -->
+<div class="md:col-span-12 group relative overflow-hidden rounded-2xl bg-surface-container-low border border-outline-variant/15 hover:border-tertiary/50 transition-colors">
+<div class="p-8 md:p-12 h-full flex flex-col justify-center">
+    <!-- Header -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+        <div>
+            <div class="mono text-tertiary text-xs tracking-widest uppercase mb-3 block">CI/CD | Automation | Cloud Infrastructure</div>
+            <h3 class="text-3xl md:text-5xl font-headline font-bold text-on-surface">⚙️ DevOps Engineering Projects</h3>
+        </div>
+    </div>
+    
+    <!-- Content Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Col 1 -->
+        <div class="space-y-8">
+            <div>
+                <h4 class="font-headline font-bold text-tertiary mb-3 text-lg">📌 Overview &amp; Objective</h4>
+                <p class="text-[1rem] leading-[1.6] text-on-surface-variant font-body mb-4">Hands-on DevOps initiatives focused on automation, continuous integration/delivery, and infrastructure provisioning.</p>
+                <p class="text-[1rem] leading-[1.6] text-on-surface-variant font-body">Objective: Build practical expertise in automating deployments, IaC, and designing scalable CI/CD pipelines.</p>
+            </div>
+            <div>
+                <h4 class="font-headline font-bold text-secondary mb-3 text-lg">🛠️ Tools &amp; Technologies</h4>
+                <div class="flex flex-wrap gap-3 mt-4">
+                    <span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1.5 text-xs font-mono rounded text-on-surface">GitHub Actions</span>
+                    <span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1.5 text-xs font-mono rounded text-on-surface">Terraform</span>
+                    <span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1.5 text-xs font-mono rounded text-on-surface">AWS CDK</span>
+                    <span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1.5 text-xs font-mono rounded text-on-surface">Docker</span>
+                    <span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1.5 text-xs font-mono rounded text-on-surface">AWS S3/Lambda</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="space-y-8">
+            <div>
+                <h4 class="font-headline font-bold text-primary mb-3 text-lg">🔧 Key Implementations</h4>
+                <ul class="space-y-3 text-on-surface-variant leading-relaxed text-sm">
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span><strong class="text-on-surface">Static Web CI/CD:</strong> Built GitHub Actions pipelines for continuous deployment to Netlify, reducing manual effort.</li>
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span><strong class="text-on-surface">IaC Automation:</strong> Provisioned AWS resources and automated environment setups using Terraform &amp; AWS CDK.</li>
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span><strong class="text-on-surface">Containerization:</strong> Dockerized applications for portability, preparing for Amazon ECS/EKS orchestration.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Col 3 -->
+        <div class="space-y-8">
+            <div>
+                <h4 class="font-headline font-bold text-on-surface mb-3 text-lg">📊 Outcomes</h4>
+                <ul class="space-y-3 text-on-surface-variant leading-relaxed text-sm">
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span>Significantly improved deployment speed and workflow reliability through an automation-first approach.</li>
+                    <li class="flex gap-3"><span class="text-tertiary">▹</span>Strengthened understanding of the entire DevOps lifecycle.</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-headline font-bold text-on-surface mb-3 text-lg">➕ Future Enhancements</h4>
+                <ul class="space-y-2 text-on-surface-variant leading-relaxed text-sm">
+                    <li class="flex gap-3"><span class="text-secondary">▹</span>Prometheus &amp; Grafana monitoring</li>
+                    <li class="flex gap-3"><span class="text-secondary">▹</span>Blue-green / canary deployments</li>
+                    <li class="flex gap-3"><span class="text-secondary">▹</span>CI/CD Security Scanning (DevSecOps)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 2. Production Incident Management & Reliability Engineering -->
+<div class="md:col-span-12 lg:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/15 hover:border-error/50 transition-colors">
+<div class="p-8 h-full flex flex-col justify-center">
+<div class="mono text-error text-xs tracking-widest uppercase mb-3 block">Incident Management</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Production Incident Management</h3>
+<ul class="space-y-2 text-on-surface-variant leading-relaxed text-sm">
+    <li class="flex gap-2"><span class="text-error">▹</span>Diagnosed and resolved critical production issues across cloud and application layers within SLA constraints.</li>
+    <li class="flex gap-2"><span class="text-error">▹</span>Conducted detailed Root Cause Analysis (RCA) to eliminate recurring failures and improve stability.</li>
+    <li class="flex gap-2"><span class="text-error">▹</span>Troubleshot real-world issues including gateway failures, deployment errors, and service disruptions.</li>
+    <li class="flex gap-2"><span class="text-error">▹</span>Contributed to maintaining high availability and minimizing downtime in production environments.</li>
+</ul>
+</div>
+</div>
+
+<!-- 3. CI/CD Pipeline Engineering & GitOps Practices -->
+<div class="md:col-span-12 lg:col-span-6 group relative overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/15 hover:border-primary-fixed/50 transition-colors">
+<div class="p-8 h-full flex flex-col justify-center">
+<div class="mono text-primary-fixed text-xs tracking-widest uppercase mb-3 block">CI/CD &amp; GitOps</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4">CI/CD Pipeline Engineering</h3>
+<ul class="space-y-2 text-on-surface-variant leading-relaxed text-sm">
+    <li class="flex gap-2"><span class="text-primary-fixed">▹</span>Designed and managed Git-based workflows, including branching strategies and remote repository synchronization.</li>
+    <li class="flex gap-2"><span class="text-primary-fixed">▹</span>Implemented CI/CD pipelines using GitLab to enable seamless multi-environment deployments (Dev, QA, Production).</li>
+    <li class="flex gap-2"><span class="text-primary-fixed">▹</span>Automated build and release processes, significantly improving deployment speed and consistency.</li>
+    <li class="flex gap-2"><span class="text-primary-fixed">▹</span>Reduced human error by enforcing pipeline-driven deployment standards.</li>
+</ul>
+</div>
+</div>
+
+<!-- 4. Cloud & Distributed Systems Engineering -->
+<div class="md:col-span-12 lg:col-span-6 group relative overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/15 hover:border-secondary/50 transition-colors">
+<div class="p-8 h-full flex flex-col justify-center">
+<div class="mono text-secondary text-xs tracking-widest uppercase mb-3 block">Cloud Architecture</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Cloud &amp; Distributed Systems</h3>
+<ul class="space-y-2 text-on-surface-variant leading-relaxed text-sm">
+    <li class="flex gap-2"><span class="text-secondary">▹</span>Worked within AWS environments leveraging services such as Lambda, Step Functions, S3, and CloudWatch.</li>
+    <li class="flex gap-2"><span class="text-secondary">▹</span>Contributed to enterprise cloud migration initiatives, including system segmentation and data transfer workflows.</li>
+    <li class="flex gap-2"><span class="text-secondary">▹</span>Applied distributed system principles such as decoupling and scalability in real-world scenarios.</li>
+    <li class="flex gap-2"><span class="text-secondary">▹</span>Gained exposure to enterprise-grade platforms including WebSphere Application Server (WAS).</li>
+</ul>
+</div>
+</div>
+
+<!-- 5. Monitoring, Observability & Dashboard Engineering -->
+<div class="md:col-span-12 lg:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/15 hover:border-tertiary-fixed/50 transition-colors">
+<div class="p-8 h-full flex flex-col justify-center">
+<div class="mono text-tertiary-fixed text-xs tracking-widest uppercase mb-3 block">Observability</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Monitoring Dashboards</h3>
+<ul class="space-y-2 text-on-surface-variant leading-relaxed text-sm">
+    <li class="flex gap-2"><span class="text-tertiary-fixed">▹</span>Conceptualized and designed enhanced monitoring dashboards to replace static, table-based system views.</li>
+    <li class="flex gap-2"><span class="text-tertiary-fixed">▹</span>Focused on visualizing execution metrics, performance trends, and system health for better decision-making.</li>
+    <li class="flex gap-2"><span class="text-tertiary-fixed">▹</span>Improved observability by structuring logs, metrics, and alerts into actionable insights.</li>
+    <li class="flex gap-2"><span class="text-tertiary-fixed">▹</span>Advocated for data-driven monitoring to proactively identify and mitigate system issues.</li>
+</ul>
+</div>
+</div>
+
+<!-- 6. DevOps Automation & Cloud-Native Practices -->
+<div class="md:col-span-12 lg:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/15 hover:border-primary/50 transition-colors">
+<div class="p-8 h-full flex flex-col justify-center">
+<div class="mono text-primary text-xs tracking-widest uppercase mb-3 block">Cloud-Native Ecosystem</div>
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-4">DevOps Automation Practices</h3>
+<ul class="space-y-2 text-on-surface-variant leading-relaxed text-sm">
+    <li class="flex gap-2"><span class="text-primary">▹</span>Championed an automation-first mindset to eliminate repetitive manual processes.</li>
+    <li class="flex gap-2"><span class="text-primary">▹</span>Designed workflows aimed at improving scalability, reliability, and operational efficiency.</li>
+    <li class="flex gap-2"><span class="text-primary">▹</span>Focused on building cloud-native solutions aligned with modern DevOps best practices.</li>
+    <li class="flex gap-2"><span class="text-primary">▹</span>Continuously explored optimization opportunities across infrastructure and deployment pipelines.</li>
+</ul>
+</div>
+</div>
+
+<!-- 7. Wedding Invitation Web Application -->
+<div class="md:col-span-12 group relative overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/15 hover:border-tertiary/50 transition-colors">
+<div class="p-8 h-full flex flex-col justify-center">
+<div class="flex justify-between items-center mb-4">
+    <div class="mono text-tertiary text-xs tracking-widest uppercase block">Web Development &amp; Git</div>
+    <a href="#" class="text-tertiary hover:text-white transition-colors"><span class="material-symbols-outlined">north_east</span></a>
+</div>
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-4">Wedding Invitation Web Application</h3>
+<div class="grid md:grid-cols-2 gap-8">
+    <ul class="space-y-2 text-on-surface-variant leading-relaxed text-sm">
+        <li class="flex gap-2"><span class="text-tertiary">▹</span>Architected and deployed a production-ready digital wedding invitation platform with real-world usage.</li>
+        <li class="flex gap-2"><span class="text-tertiary">▹</span>Managed end-to-end development lifecycle using Git, including version control, updates, and deployment readiness.</li>
+        <li class="flex gap-2"><span class="text-tertiary">▹</span>Delivered a user-centric web experience with clean UI and shareable e-invite functionality.</li>
+    </ul>
+    <ul class="space-y-2 text-on-surface-variant leading-relaxed text-sm">
+        <li class="flex gap-2"><span class="text-tertiary">▹</span>Demonstrated strong ownership by independently building, versioning, and delivering a complete web solution.</li>
+        <li class="flex gap-2"><span class="text-tertiary">▹</span>Showcased ability to translate real-life requirements into functional, deployable applications.</li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 border-t border-slate-800/30">
+<div class="w-full max-w-7xl mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-lg font-black text-slate-200 font-headline uppercase tracking-widest">
+                KALVALA PHANINDHRA
+            </div>
+<div class="text-sm font-light text-slate-500 font-label tracking-wide opacity-80">
+                © 2026 Kalvala Phanindhra. Built with Precision.
+            </div>
+</div>
+</footer>
+</body></html>

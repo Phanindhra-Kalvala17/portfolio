@@ -1,0 +1,228 @@
+<!-- DevOps Portfolio - Resume -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Resume | DevOps Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#9ecaff",
+              "outline": "#8e9099",
+              "on-primary-fixed-variant": "#00497d",
+              "surface-container": "#1e2022",
+              "outline-variant": "#44474e",
+              "on-background": "#e2e2e5",
+              "on-tertiary-container": "#00984c",
+              "error": "#ffb4ab",
+              "tertiary-fixed": "#62ff96",
+              "surface-container-low": "#1a1c1e",
+              "inverse-on-surface": "#2f3133",
+              "on-error-container": "#ffdad6",
+              "primary-container": "#001d36",
+              "surface": "#121416",
+              "on-secondary": "#17324b",
+              "primary": "#9ecaff",
+              "on-tertiary-fixed": "#00210b",
+              "on-tertiary": "#003918",
+              "surface-bright": "#37393b",
+              "secondary": "#afc9e8",
+              "tertiary-container": "#00210b",
+              "on-surface-variant": "#c4c6cf",
+              "background": "#121416",
+              "on-primary": "#003258",
+              "surface-container-highest": "#333537",
+              "secondary-container": "#2f4963",
+              "secondary-fixed-dim": "#afc9e8",
+              "error-container": "#93000a",
+              "tertiary": "#00e475",
+              "on-secondary-container": "#9eb7d6",
+              "surface-container-lowest": "#0c0e10",
+              "on-secondary-fixed": "#001d34",
+              "inverse-primary": "#0061a4",
+              "inverse-surface": "#e2e2e5",
+              "on-secondary-fixed-variant": "#2f4963",
+              "tertiary-fixed-dim": "#00e475",
+              "on-tertiary-fixed-variant": "#005226",
+              "on-primary-container": "#0088e1",
+              "surface-container-high": "#282a2c",
+              "surface-dim": "#121416",
+              "on-error": "#690005",
+              "primary-fixed-dim": "#9ecaff",
+              "surface-variant": "#333537",
+              "on-surface": "#e2e2e5",
+              "on-primary-fixed": "#001d36",
+              "primary-fixed": "#d1e4ff",
+              "secondary-fixed": "#d0e4ff"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"],
+              "mono": ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace']
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Inter', sans-serif; }
+      h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary/30">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-8 py-4 max-w-7xl mx-auto z-50 bg-surface-variant/60 backdrop-blur-[20px] left-1/2 -translate-x-1/2">
+<div class="text-xl font-bold tracking-tighter text-blue-300 dark:text-blue-200 font-headline">
+            DevOps Portfolio
+        </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label font-medium" href="index.html">Blog</a>
+<a class="text-blue-300 border-b-2 border-emerald-400 pb-1 font-label font-medium" href="resume.html">Resume</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label font-medium" href="projects.html">Projects</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label font-medium" href="about.html">About</a>
+<a href="mailto:Kalvalaphanindhra02@gmail.com?subject=Opportunity:%20[Role%20Title]%20at%20[Company%20Name]&body=Hi%20Phanindhra,%0A%0AWe%20are%20interested%20in%20your%20profile.%20Please%20find%20the%20details%20below:%0A%0A%2D%2D%2D%0A%0ACompany%20Name:%20[Enter%20Company%20Name]%0A%0AJob%20Title:%20[Enter%20Job%20Title]%0A%0AJob%20Description:%0A[Paste%20job%20description%20or%20link%20here]%0A%0AApplication%20/%20Next%20Steps:%0A[Provide%20next%20steps%20here]%0A%0A%2D%2D%2D%0A%0ALooking%20forward%20to%20connecting!" class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold hover:bg-on-primary-container hover:shadow-[0_0_15px_#00e475] transition-all inline-block">
+    Hire Me
+</a>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Header & Professional Summary -->
+<header class="mb-20 grid grid-cols-1 md:grid-cols-12 gap-12 items-end md:pl-24 md:pr-12">
+<div class="md:col-span-8">
+<span class="mono text-tertiary text-sm tracking-widest uppercase mb-4 block">System.Profile.Active</span>
+<h1 class="text-6xl md:text-8xl font-headline font-bold tracking-tighter bg-gradient-to-br from-primary to-on-primary-container bg-clip-text text-transparent mb-8 leading-none pb-2">
+                    Engineering <br/> <span class="italic text-on-surface">Reliability.</span>
+</h1>
+<p class="text-[1rem] text-on-surface-variant max-w-2xl leading-[1.6] font-body">
+                    A dedicated Cloud &amp; DevOps Engineer with 2.1+ years of experience in orchestrating cloud-native ecosystems. I bridge the gap between development and operations by implementing robust CI/CD pipelines, automated infrastructure, and high-availability monitoring systems.
+                </p>
+</div>
+<div class="md:col-span-4 flex md:justify-end">
+<a href="assets/Kalvala_Phanindhra_Resume.pdf" download="Kalvala_Phanindhra_Resume.pdf" class="group relative inline-flex items-center gap-3 bg-surface-container-highest px-8 py-5 rounded-xl border border-outline-variant/15 hover:bg-primary-container hover:text-primary transition-all duration-300 shadow-[0_40px_40px_rgba(47,73,99,0.06)]">
+<span class="material-symbols-outlined">download</span>
+<span class="font-bold tracking-tight">Download PDF Resume</span>
+</a>
+</div>
+</header>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Left Column: Experience Timeline -->
+<section class="lg:col-span-7">
+<div class="flex items-center gap-4 mb-12">
+<h2 class="text-4xl font-bold tracking-tight">Experience</h2>
+<div class="h-[1px] flex-grow bg-outline-variant/30"></div>
+</div>
+<div class="space-y-12">
+<!-- Item 1 -->
+<div class="relative pl-8 group">
+<div class="absolute left-0 top-2 w-[2px] h-full bg-surface-container-highest group-hover:bg-tertiary transition-colors"></div>
+<div class="absolute -left-1.5 top-2 w-3 h-3 rounded-full bg-surface-container-highest group-hover:bg-tertiary transition-colors"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+<h3 class="text-2xl font-bold text-tertiary">DevOps Engineer</h3>
+<span class="mono text-xs text-on-secondary-container bg-secondary-container px-3 py-1 rounded-full">2025 — PRESENT</span>
+</div>
+<p class="text-primary font-medium mb-4">Accenture (BCBSA – Healthcare)</p>
+<ul class="space-y-4 text-[0.95rem] text-on-surface-variant leading-[1.6]">
+<li class="flex gap-3"><span class="text-tertiary">•</span>Built and implemented an automated EFS cleanup solution using AWS Lambda and Step Functions, reducing manual maintenance effort and optimizing storage usage.</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Managed and maintained production-grade CI/CD pipelines, ensuring zero/near-zero downtime deployments across environments.</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Designed and configured CloudWatch dashboards, alarms, and log monitoring for real-time visibility into application performance and workflow health.</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Troubleshot and resolved issues in serverless and event-driven architectures (Lambda, Step Functions, API Gateway).</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Contributed to automation of operational tasks, improving system efficiency and reducing manual intervention.</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Collaborated with cross-functional teams to ensure reliable releases and faster deployment cycles.</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Worked with Infrastructure as Code (Terraform/CDK) to support consistent environment provisioning.</li>
+</ul>
+</div>
+<!-- Item 2 -->
+<div class="relative pl-8 group">
+<div class="absolute left-0 top-2 w-[2px] h-full bg-surface-container-highest group-hover:bg-tertiary transition-colors"></div>
+<div class="absolute -left-1.5 top-2 w-3 h-3 rounded-full bg-surface-container-highest group-hover:bg-tertiary transition-colors"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+<h3 class="text-2xl font-bold text-tertiary">Cloud Operations Engineer</h3>
+<span class="mono text-xs text-on-secondary-container bg-secondary-container px-3 py-1 rounded-full">2024 — 2025</span>
+</div>
+<p class="text-primary font-medium mb-4">Accenture (BCBSA – Healthcare)</p>
+<ul class="space-y-4 text-[0.95rem] text-on-surface-variant leading-[1.6]">
+<li class="flex gap-3"><span class="text-tertiary">•</span>Led and supported migration of IBM-based systems to AWS, including data transfer, system segmentation, and environment setup.</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Provided L2 production support, ensuring issue resolution within SLA and minimizing business impact.</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Managed CI/CD deployments across Dev, QA, and Production environments, ensuring release stability and consistency.</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Diagnosed and resolved critical production incidents, including: AWS Lambda failures, Step Function workflow issues, and Event-driven processing breakdowns.</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Worked extensively on IBM WebSphere Application Server, troubleshooting URL/application downtime issues and restoring services within SLA timelines.</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Performed application server restarts, configuration validation, and dependency checks to bring systems back online quickly.</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Conducted root cause analysis (RCA) and tracked incidents using JIRA, ensuring proper documentation and preventive actions.</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Monitored applications using AWS CloudWatch, proactively identifying anomalies and preventing failures.</li>
+<li class="flex gap-3"><span class="text-tertiary">•</span>Worked in Plan-Test (PLT) environments to validate fixes before production release.</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Right Column: Skills & Certs -->
+<aside class="lg:col-span-5 space-y-16">
+<!-- Detailed Skills Section -->
+<section>
+<div class="flex items-center gap-4 mb-8">
+<h2 class="text-3xl font-bold tracking-tight">Technical Stack</h2>
+<div class="h-[1px] flex-grow bg-outline-variant/30"></div>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<div class="bg-surface-container-low p-6 rounded-xl border-l-4 border-l-primary border border-outline-variant/15">
+<h4 class="mono text-sm text-primary mb-3 font-bold">Cloud &amp; Infrastructure</h4>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">AWS</span>
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">Terraform</span>
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">Lambda</span>
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">Step Functions</span>
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">RDS</span>
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">EFS</span>
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">IAM</span>
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">VPC</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border-l-4 border-l-tertiary border border-outline-variant/15">
+<h4 class="mono text-sm text-tertiary mb-3 font-bold">DevOps &amp; CI/CD</h4>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">Git</span>
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">GitLab CI/CD</span>
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">Docker</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border-l-4 border-l-secondary border border-outline-variant/15">
+<h4 class="mono text-sm text-secondary mb-3 font-bold">Monitoring &amp; General</h4>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">Amazon CloudWatch</span>
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">Linux Administration</span>
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">Shell Scripting</span>
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">Java</span>
+<span class="bg-surface-container-highest border border-outline-variant/15 px-3 py-1 text-xs font-medium rounded">SQL</span>
+</div>
+</div>
+</div>
+</section>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 border-t border-slate-800/30">
+<div class="w-full max-w-7xl mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-lg font-black text-slate-200">
+                Kalvala Phanindhra
+            </div>
+<div class="text-sm font-light text-slate-500 tracking-wide">
+                © 2026 Kalvala Phanindhra. Built with Precision.
+            </div>
+</div>
+</footer>
+</body></html>

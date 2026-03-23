@@ -1,0 +1,374 @@
+<!-- DevOps Portfolio - Interview Ready Home -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-tint": "#9ecaff",
+            "outline": "#8e9099",
+            "on-primary-fixed-variant": "#00497d",
+            "surface-container": "#1e2022",
+            "outline-variant": "#44474e",
+            "on-background": "#e2e2e5",
+            "on-tertiary-container": "#00984c",
+            "error": "#ffb4ab",
+            "tertiary-fixed": "#62ff96",
+            "surface-container-low": "#1a1c1e",
+            "inverse-on-surface": "#2f3133",
+            "on-error-container": "#ffdad6",
+            "primary-container": "#001d36",
+            "surface": "#121416",
+            "on-secondary": "#17324b",
+            "primary": "#9ecaff",
+            "on-tertiary-fixed": "#00210b",
+            "on-tertiary": "#003918",
+            "surface-bright": "#37393b",
+            "secondary": "#afc9e8",
+            "tertiary-container": "#00210b",
+            "on-surface-variant": "#c4c6cf",
+            "background": "#121416",
+            "on-primary": "#003258",
+            "surface-container-highest": "#333537",
+            "secondary-container": "#2f4963",
+            "secondary-fixed-dim": "#afc9e8",
+            "error-container": "#93000a",
+            "tertiary": "#00e475",
+            "on-secondary-container": "#9eb7d6",
+            "surface-container-lowest": "#0c0e10",
+            "on-secondary-fixed": "#001d34",
+            "inverse-primary": "#0061a4",
+            "inverse-surface": "#e2e2e5",
+            "on-secondary-fixed-variant": "#2f4963",
+            "tertiary-fixed-dim": "#00e475",
+            "on-tertiary-fixed-variant": "#005226",
+            "on-primary-container": "#0088e1",
+            "surface-container-high": "#282a2c",
+            "surface-dim": "#121416",
+            "on-error": "#690005",
+            "primary-fixed-dim": "#9ecaff",
+            "surface-variant": "#333537",
+            "on-surface": "#e2e2e5",
+            "on-primary-fixed": "#001d36",
+            "primary-fixed": "#d1e4ff",
+            "secondary-fixed": "#d0e4ff"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-background selection:bg-primary/30 selection:text-primary">
+  <!-- Top Navigation Bar -->
+  <nav class="fixed top-0 w-full z-50 bg-surface-variant/60 backdrop-blur-[20px] transition-all border-none">
+    <div class="w-full max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold tracking-tighter text-blue-300 dark:text-blue-200">
+        DevOps Portfolio
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="index.html">Blog</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="resume.html">Resume</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="projects.html">Projects</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="about.html">About</a>
+      </div>
+      <a href="mailto:Kalvalaphanindhra02@gmail.com?subject=Opportunity:%20[Role%20Title]%20at%20[Company%20Name]&body=Hi%20Phanindhra,%0A%0AWe%20are%20interested%20in%20your%20profile.%20Please%20find%20the%20details%20below:%0A%0A%2D%2D%2D%0A%0ACompany%20Name:%20[Enter%20Company%20Name]%0A%0AJob%20Title:%20[Enter%20Job%20Title]%0A%0AJob%20Description:%0A[Paste%20job%20description%20or%20link%20here]%0A%0AApplication%20/%20Next%20Steps:%0A[Provide%20next%20steps%20here]%0A%0A%2D%2D%2D%0A%0ALooking%20forward%20to%20connecting!"
+        class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold hover:bg-on-primary-container hover:shadow-[0_0_15px_#00e475] transition-all inline-block">
+        Hire Me
+      </a>
+    </div>
+  </nav>
+  <main class="pt-24 pb-20">
+    <!-- Hero Section -->
+    <section
+      class="max-w-7xl mx-auto pl-8 pr-8 md:pl-24 md:pr-12 py-20 md:py-32 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-8 space-y-8">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary-container text-on-tertiary-container text-xs font-label mono tracking-widest uppercase">
+          <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+          Kalvala Phanindhra
+        </div>
+        <h1
+          class="text-5xl md:text-7xl font-bold leading-[0.9] tracking-tighter bg-gradient-to-br from-primary to-on-primary-container bg-clip-text text-transparent pb-2 font-headline">
+          Cloud &amp; <span class="italic">DevOps</span> Engineer
+        </h1>
+        <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl font-body">
+          Cloud &amp; DevOps Engineer with <span class="text-on-surface font-medium">2.1+ years</span> of hands-on
+          experience in AWS environments, infrastructure automation, and production support.
+        </p>
+        <div class="flex flex-wrap gap-6 pt-4">
+          <a href="resume.html"
+            class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-on-primary-container hover:shadow-[0_0_15px_#00e475] transition-all group w-max">
+            View Interactive Resume
+            <span
+              class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </a>
+          <a href="assets/Kalvala_Phanindhra_Resume.pdf" download="Kalvala_Phanindhra_Resume.pdf"
+            class="px-8 py-4 rounded-xl font-bold border border-outline/20 bg-transparent text-primary hover:bg-surface-container-high transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-lg">download</span>
+            Download PDF Resume
+          </a>
+        </div>
+      </div>
+      <div class="hidden md:block md:col-span-4 relative">
+        <div
+          class="aspect-square bg-surface-container-lowest rounded-3xl overflow-hidden relative shadow-[0_40px_40px_rgba(47,73,99,0.06)] border border-outline-variant/15">
+          <img class="w-full h-full object-cover opacity-60 mix-blend-luminosity"
+            data-alt="Abstract 3d visualization of data flow and server racks in deep blue and emerald green neon lighting, futuristic tech aesthetic"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDym3KD78vXrDhxrQ_D9O3SgHXTWIVd0tLoe6BW5w3iU7F8aRx6je4e0g7aU6PLZjde-c0iccV2oMqevWT2_4W6p-_NwV0RkveJK-CZQX0mJRHdXOzixy-WHd6VOUeB6xKPuCm3wi4jjtp91hkuN_OLXvbQdbXVIIHC0UED0cpMY0ZOJugE2asHCmqJU7bRujmq7tjIeTuTYz283pZjIv1c8dNhG627uxRgBgkMHGUsfonKqnGDi4TF7Ow1Oa2w5dsd5CO_ULXexnYF" />
+          <div class="absolute inset-0 bg-gradient-to-tr from-background via-transparent to-primary/10"></div>
+        </div>
+        <!-- Career Focused Metrics -->
+        <div class="absolute -bottom-10 -left-10 flex flex-col gap-3">
+          <div
+            class="bg-surface-container-highest p-4 rounded-xl shadow-[0_40px_40px_rgba(47,73,99,0.06)] border border-outline-variant/15">
+            <div class="mono text-[10px] text-tertiary mb-1">YEARS_EXP</div>
+            <div class="text-3xl font-headline font-bold">2.1+</div>
+          </div>
+          <div
+            class="bg-surface-container-highest p-4 rounded-xl shadow-[0_40px_40px_rgba(47,73,99,0.06)] border border-outline-variant/15">
+            <div class="mono text-[10px] text-primary mb-1">ROLES_HELD</div>
+            <div class="text-3xl font-headline font-bold">2</div>
+          </div>
+          <div
+            class="bg-surface-container-highest p-4 rounded-xl shadow-[0_40px_40px_rgba(47,73,99,0.06)] border border-outline-variant/15">
+            <div class="mono text-[10px] text-secondary mb-1">AUTOMATIONS</div>
+            <div class="text-3xl font-headline font-bold">50+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Core Competencies Section -->
+    <section class="max-w-7xl mx-auto pl-8 pr-8 md:pl-24 md:pr-12 py-20 bg-surface rounded-none my-12 border-none">
+      <div class="mb-12">
+        <span class="mono text-primary text-xs tracking-widest uppercase mb-2 block">Skill Matrix</span>
+        <h2 class="text-4xl font-headline font-bold tracking-tight">Core Competencies</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-surface-container-low p-8 rounded-2xl border border-outline-variant/15 transition-colors group">
+          <div class="flex justify-between items-start mb-6">
+            <span class="material-symbols-outlined text-primary text-4xl">cloud</span>
+            <span class="mono text-[10px] bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full">2+
+              YEARS</span>
+          </div>
+          <h3 class="font-headline font-bold text-xl mb-3 text-tertiary">AWS Cloud</h3>
+          <div class="w-full bg-surface-container-highest h-1 rounded-full mb-4">
+            <div class="bg-primary h-full rounded-full w-[95%]"></div>
+          </div>
+          <p class="text-[1rem] leading-[1.6] text-on-surface-variant font-body">EC2, S3, IAM, VPC, and CloudWatch
+            monitoring.</p>
+        </div>
+        <div class="bg-surface-container-low p-8 rounded-2xl border border-outline-variant/15 transition-colors group">
+          <div class="flex justify-between items-start mb-6">
+            <span class="material-symbols-outlined text-tertiary text-4xl">layers</span>
+            <span class="mono text-[10px] bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full">2+
+              YEARS</span>
+          </div>
+          <h3 class="font-headline font-bold text-xl mb-3 text-tertiary">Terraform</h3>
+          <div class="w-full bg-surface-container-highest h-1 rounded-full mb-4">
+            <div class="bg-tertiary h-full rounded-full w-[90%]"></div>
+          </div>
+          <p class="text-[1rem] leading-[1.6] text-on-surface-variant font-body">Infrastructure as Code, state
+            management, and automation.</p>
+        </div>
+        <div class="bg-surface-container-low p-8 rounded-2xl border border-outline-variant/15 transition-colors group">
+          <div class="flex justify-between items-start mb-6">
+            <span class="material-symbols-outlined text-secondary text-4xl">bolt</span>
+            <span class="mono text-[10px] bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full">1.5+
+              YEARS</span>
+          </div>
+          <h3 class="font-headline font-bold text-xl mb-3 text-tertiary">Serverless</h3>
+          <div class="w-full bg-surface-container-highest h-1 rounded-full mb-4">
+            <div class="bg-secondary h-full rounded-full w-[88%]"></div>
+          </div>
+          <p class="text-[1rem] leading-[1.6] text-on-surface-variant font-body">AWS Lambda, Step Functions, and API
+            Gateway.</p>
+        </div>
+        <div class="bg-surface-container-low p-8 rounded-2xl border border-outline-variant/15 transition-colors group">
+          <div class="flex justify-between items-start mb-6">
+            <span class="material-symbols-outlined text-primary text-4xl">terminal</span>
+            <span class="mono text-[10px] bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full">2+
+              YEARS</span>
+          </div>
+          <h3 class="font-headline font-bold text-xl mb-3 text-tertiary">GitLab &amp; CI/CD</h3>
+          <div class="w-full bg-surface-container-highest h-1 rounded-full mb-4">
+            <div class="bg-primary h-full rounded-full w-[92%]"></div>
+          </div>
+          <p class="text-[1rem] leading-[1.6] text-on-surface-variant font-body">Pipeline management, Docker
+            containerization, and deployments.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Recent Blog Posts Section -->
+    <section class="max-w-7xl mx-auto px-8 py-20">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+        <div>
+          <span class="mono text-tertiary text-xs tracking-widest uppercase mb-2 block">Projects</span>
+          <h2 class="text-4xl font-bold tracking-tight">Key Deployments</h2>
+        </div>
+        <a class="text-primary hover:underline flex items-center gap-2 font-medium" href="projects.html">
+          View All Projects
+          <span class="material-symbols-outlined">north_east</span>
+        </a>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Blog Card 1 -->
+        <article class="group cursor-pointer">
+          <div
+            class="aspect-video bg-surface-container-lowest rounded-2xl overflow-hidden mb-6 relative border border-outline-variant/15">
+            <img class="w-full h-full object-cover opacity-80"
+              data-alt="Close up of mechanical keyboard and server blinking lights in a dark room with green glow"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuByzov-NJOYMzhgUrxVmTjx7yzeN8W3P1UtHfpgswbeM3Q5t8YQSO4C3NLiJQtsYt5YW9DVDWOdk7c2zBhF0zE3D9J5BAoXEMhFjfgXmLuWtoirhwe0r8n47vUfhhzCnzDDwPZfwFc_CpqchXSpBU7rT4sYtzIA7wVIL4tbPPJ0XVicyufQeGsoK27yQYrBa764QfOBuYNgO_WGCxI23UUqQ9sAh3geNEjwpxGn9y_JOU52M6_2NWrTVSeb-uiMOnHN6y0cPPyGOOB_" />
+            <div
+              class="absolute top-4 left-4 bg-surface-bright/10 backdrop-blur-md px-3 py-1 rounded-full text-[10px] mono text-on-surface uppercase border border-outline-variant/15">
+              Serverless</div>
+          </div>
+          <div class="mono text-xs text-slate-500 mb-3">AWS Lambda &amp; Step Functions</div>
+          <h3 class="text-2xl font-headline font-bold leading-snug text-on-surface mb-4">
+            Serverless EFS Cleanup Automation
+          </h3>
+          <p class="text-[1rem] leading-[1.6] text-on-surface-variant font-body line-clamp-2">
+            Automated storage cleanup eliminating manual intervention and improving cost efficiency.
+          </p>
+        </article>
+        <!-- Project Card 2 -->
+        <article class="group cursor-pointer">
+          <div
+            class="aspect-video bg-surface-container-lowest rounded-2xl overflow-hidden mb-6 relative border border-outline-variant/15">
+            <img class="w-full h-full object-cover opacity-80"
+              data-alt="Digital network visualization with interconnected blue nodes and lines on dark background"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1zdI-fzdZuteGKi4aMDrnmwgUxQoKY-lPnsXfUNrI8Pvo2uENdDOdBdp-cL7ect5tIk2MrK6vxS12k80mWwbrhsX5Ooo3aoW0UqPQHDctCjKpX-I2rlfS70Wi6DrXDaJHJcnuMSNyWf17HX48sve1t6rIMzOaaaYYMA2jUDJzmPWjG6fWHryaA6CfXrincOqQqOVpoMsj0HUPJWrEvwNirl4u2LnICT-ERx7zMs9GmqfNg9WK2N92JJSClSDpr6h6qE8WYh-UcLu4" />
+            <div
+              class="absolute top-4 left-4 bg-surface-bright/10 backdrop-blur-md px-3 py-1 rounded-full text-[10px] mono text-on-surface uppercase border border-outline-variant/15">
+              GitLab CI</div>
+          </div>
+          <div class="mono text-xs text-slate-500 mb-3">DevOps &amp; Automation</div>
+          <h3 class="text-2xl font-headline font-bold leading-snug text-on-surface mb-4">
+            CI/CD Pipeline Automation
+          </h3>
+          <p class="text-[1rem] leading-[1.6] text-on-surface-variant font-body line-clamp-2">
+            Designed GitLab pipelines for multi-environment deployments, ensuring zero downtime production releases.
+          </p>
+        </article>
+        <!-- Project Card 3 -->
+        <article class="group cursor-pointer">
+          <div
+            class="aspect-video bg-surface-container-lowest rounded-2xl overflow-hidden mb-6 relative border border-outline-variant/15">
+            <img class="w-full h-full object-cover opacity-80"
+              data-alt="Overhead view of complex server cables and data center infrastructure with cool lighting"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuADnGrSBablskyMaVtO8_zPw9TnOEE1nyX9MHcfFWw9RggB1PlTAuv8fbxMzc9aBF01j710kZ2nsIIEuyFso8_UNR01n7-55DvjCT0hBQ9mM1N2y89HQW_R6Z8NZ0wlrfBWr_D_9bMd6Nk-ts63KNCpA9ReBZdifvf5StNK6BAUHtRG2_aXaeQeqKUE7-uFev5N_sYAbg_i-73y_GYsF1iFAqBxtTxjb9kf_Eh_ggGxi4tb76FK--sUbI1yeZyebwcq26nNd3r-ll8H" />
+            <div
+              class="absolute top-4 left-4 bg-surface-bright/10 backdrop-blur-md px-3 py-1 rounded-full text-[10px] mono text-on-surface uppercase border border-outline-variant/15">
+              Observability</div>
+          </div>
+          <div class="mono text-xs text-slate-500 mb-3">Amazon CloudWatch</div>
+          <h3 class="text-2xl font-headline font-bold leading-snug text-on-surface mb-4">
+            AWS Monitoring Dashboard
+          </h3>
+          <p class="text-[1rem] leading-[1.6] text-on-surface-variant font-body line-clamp-2">
+            Built comprehensive CloudWatch dashboards to monitor Lambda &amp; Step Functions for improved visibility.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- Command Line / CTA Section -->
+    <section class="max-w-7xl mx-auto px-8 py-20">
+      <div
+        class="bg-surface-container-lowest rounded-[2rem] p-8 md:p-12 border border-outline-variant/15 relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-8 opacity-10">
+          <span class="material-symbols-outlined text-9xl">code</span>
+        </div>
+        <div class="relative z-10 max-w-2xl">
+          <h2 class="text-3xl md:text-5xl font-headline font-bold mb-6 text-on-surface">Ready to scale your
+            infrastructure?</h2>
+          <p class="text-on-surface-variant mb-8 text-[1rem] leading-[1.6] font-body">
+            I'm currently open to new opportunities as a DevOps or Site Reliability Engineer. Let's discuss how we can
+            automate your path to production.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="mailto:Kalvalaphanindhra02@gmail.com?subject=Opportunity:%20[Role%20Title]%20at%20[Company%20Name]&body=Hi%20Phanindhra,%0A%0AWe%20are%20interested%20in%20your%20profile.%20Please%20find%20the%20details%20below:%0A%0A%2D%2D%2D%0A%0ACompany%20Name:%20[Enter%20Company%20Name]%0A%0AJob%20Title:%20[Enter%20Job%20Title]%0A%0AJob%20Description:%0A[Paste%20job%20description%20or%20link%20here]%0A%0AApplication%20/%20Next%20Steps:%0A[Provide%20next%20steps%20here]%0A%0A%2D%2D%2D%0A%0ALooking%20forward%20to%20connecting!"
+              class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-on-primary-container hover:shadow-[0_0_15px_#00e475] transition-all">
+              Initialize Contact <span class="material-symbols-outlined text-lg">terminal</span>
+            </a>
+          </div>
+          <!-- Code Snippet Decorative -->
+          <div
+            class="mt-12 bg-surface-container-lowest rounded-xl mono text-xs text-on-surface-variant/80 hidden md:block border border-outline-variant/15 overflow-hidden">
+            <div
+              class="flex gap-2 p-3 bg-surface-bright/10 backdrop-blur-md border-b border-outline-variant/15 items-center">
+              <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+              <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+              <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+              <span class="ml-4 text-slate-500">deploy_contact.sh</span>
+            </div>
+            <div class="p-4">
+              <div>$ terraform init &amp;&amp; terraform apply</div>
+              <div class="text-tertiary mt-2 mb-2">Applying infrastructure changes... [SUCCESS]</div>
+              <div>$ cat contact_details.yml</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800/30">
+    <div class="w-full max-w-7xl mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-lg font-black text-slate-200">
+        Kalvala Phanindhra
+      </div>
+      <div class="flex gap-8">
+        <a class="text-sm font-light text-slate-500 hover:text-blue-300 transition-all opacity-80 hover:opacity-100"
+          href="https://github.com/Phanindhra-Kalvala17" target="_blank">GitHub</a>
+        <a class="text-sm font-light text-slate-500 hover:text-blue-300 transition-all opacity-80 hover:opacity-100"
+          href="https://www.linkedin.com/in/phanindhra-kalvala" target="_blank">LinkedIn</a>
+        <a class="text-sm font-light text-slate-500 hover:text-blue-300 transition-all opacity-80 hover:opacity-100"
+          href="mailto:Kalvalaphanindhra02@gmail.com">Email</a>
+      </div>
+      <div class="text-sm font-light text-slate-500 tracking-wide">
+        © 2024 Architectural Terminal. Built with Precision.
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
