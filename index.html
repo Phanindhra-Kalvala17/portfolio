@@ -1,4 +1,4 @@
-<!-- DevOps Portfolio - Interview Ready Home -->
+<!-- Portfolio - Interview Ready Home -->
 <!DOCTYPE html>
 
 <html class="dark" lang="en">
@@ -103,7 +103,7 @@
   <nav class="fixed top-0 w-full z-50 bg-surface-variant/60 backdrop-blur-[20px] transition-all border-none">
     <div class="w-full max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
       <div class="text-xl font-bold tracking-tighter text-blue-300 dark:text-blue-200">
-        DevOps Portfolio
+        Portfolio
       </div>
       <div class="hidden md:flex items-center gap-8">
         <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="index.html">Blog</a>
@@ -111,10 +111,28 @@
         <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="projects.html">Projects</a>
         <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="about.html">About</a>
       </div>
-      <a href="mailto:Kalvalaphanindhra02@gmail.com?subject=Opportunity:%20[Role%20Title]%20at%20[Company%20Name]&body=Hi%20Phanindhra,%0A%0AWe%20are%20interested%20in%20your%20profile.%20Please%20find%20the%20details%20below:%0A%0A%2D%2D%2D%0A%0ACompany%20Name:%20[Enter%20Company%20Name]%0A%0AJob%20Title:%20[Enter%20Job%20Title]%0A%0AJob%20Description:%0A[Paste%20job%20description%20or%20link%20here]%0A%0AApplication%20/%20Next%20Steps:%0A[Provide%20next%20steps%20here]%0A%0A%2D%2D%2D%0A%0ALooking%20forward%20to%20connecting!"
-        class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold hover:bg-on-primary-container hover:shadow-[0_0_15px_#00e475] transition-all inline-block">
-        Hire Me
-      </a>
+      <div class="flex items-center gap-4">
+        <a href="mailto:Kalvalaphanindhra02@gmail.com?subject=Opportunity:%20[Role%20Title]%20at%20[Company%20Name]&body=Hi%20Phanindhra,%0A%0AWe%20are%20interested%20in%20your%20profile.%20Please%20find%20the%20details%20below:%0A%0A%2D%2D%2D%0A%0ACompany%20Name:%20[Enter%20Company%20Name]%0A%0AJob%20Title:%20[Enter%20Job%20Title]%0A%0AJob%20Description:%0A[Paste%20job%20description%20or%20link%20here]%0A%0AApplication%20/%20Next%20Steps:%0A[Provide%20next%20steps%20here]%0A%0A%2D%2D%2D%0A%0ALooking%20forward%20to%20connecting!"
+          class="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-xl font-bold hover:bg-on-primary-container hover:shadow-[0_0_15px_#00e475] transition-all">
+          Hire Me
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden text-on-surface-variant focus:outline-none flex items-center justify-center">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="hidden md:hidden bg-surface-variant/95 backdrop-blur-md absolute top-[100%] left-0 w-full border-t border-outline-variant/20 shadow-lg">
+      <div class="flex flex-col px-8 py-6 gap-6">
+        <a class="text-lg font-medium text-on-surface-variant hover:text-on-surface transition-colors" href="index.html">Blog</a>
+        <a class="text-lg font-medium text-on-surface-variant hover:text-on-surface transition-colors" href="resume.html">Resume</a>
+        <a class="text-lg font-medium text-on-surface-variant hover:text-on-surface transition-colors" href="projects.html">Projects</a>
+        <a class="text-lg font-medium text-on-surface-variant hover:text-on-surface transition-colors" href="about.html">About</a>
+        <a href="mailto:Kalvalaphanindhra02@gmail.com?subject=Opportunity:%20[Role%20Title]%20at%20[Company%20Name]&body=Hi%20Phanindhra,%0A%0AWe%20are%20interested%20in%20your%20profile.%20Please%20find%20the%20details%20below:%0A%0A%2D%2D%2D%0A%0ACompany%20Name:%20[Enter%20Company%20Name]%0A%0AJob%20Title:%20[Enter%20Job%20Title]%0A%0AJob%20Description:%0A[Paste%20job%20description%20or%20link%20here]%0A%0AApplication%20/%20Next%20Steps:%0A[Provide%20next%20steps%20here]%0A%0A%2D%2D%2D%0A%0ALooking%20forward%20to%20connecting!" 
+          class="bg-primary text-center text-on-primary px-6 py-3 rounded-xl font-bold hover:bg-on-primary-container transition-all mx-auto w-full">
+          Hire Me
+        </a>
+      </div>
     </div>
   </nav>
   <main class="pt-24 pb-20">
@@ -369,6 +387,23 @@
       </div>
     </div>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if (btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          const icon = btn.querySelector('span');
+          if (menu.classList.contains('hidden')) {
+            icon.textContent = 'menu';
+          } else {
+            icon.textContent = 'close';
+          }
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
